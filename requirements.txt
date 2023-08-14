@@ -1,2 +1,2 @@
 Flask==2.1.1
-pypiwin32==223
+pypiwin32==300
