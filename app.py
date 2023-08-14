@@ -13,6 +13,8 @@ GRAPH_DISTANCES = {
     "End": {},
 }
 
+
+
 def dijkstra(graph, start, end):
     distances = {node: float('inf') for node in graph}
     distances[start] = 0
@@ -62,6 +64,8 @@ def make_traffic_decisions(gps_data, mobile_app_data, congestion_data):
         decisions.append(decision)
 
     return decisions
+
+
 
 @app.route('/', methods=['GET'])
 def home():

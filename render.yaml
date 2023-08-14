@@ -1,0 +1,6 @@
+services:
+  - name: traffic-management
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    healthCheckPath: /
+    httpPort: 5000
